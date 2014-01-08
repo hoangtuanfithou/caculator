@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Cal View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <userGuides>
+                            <userLayoutGuide location="284" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" id="CRb-7v-4FN" userLabel="View Portrait">
+                                <rect key="frame" x="0.0" y="168" width="320" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YAS-rO-nlD">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aGd-Bt-1Kh">
+                                        <rect key="frame" x="80" y="0.0" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="+/-">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MPV-uk-Mz8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iPA-1f-5jF">
+                                        <rect key="frame" x="160" y="0.0" width="80" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="egP-WC-9eJ">
+                                        <rect key="frame" x="241" y="0.0" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647064924240112" green="0.5215686559677124" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title=":">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ytm-0H-nYp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aXy-5d-A2q">
+                                        <rect key="frame" x="0.0" y="80" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cty-7w-LMG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bAh-ph-E5e">
+                                        <rect key="frame" x="80" y="80" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hD0-6s-Z3N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wj4-fA-yqz">
+                                        <rect key="frame" x="160" y="80" width="80" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6mr-fm-iDH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LRu-L4-6QB">
+                                        <rect key="frame" x="241" y="80" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647064924240112" green="0.5215686559677124" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yfo-sC-9FI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I17-8R-7lI">
+                                        <rect key="frame" x="0.0" y="160" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gft-Za-kG4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FrK-tQ-r4x">
+                                        <rect key="frame" x="80" y="160" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dPC-XA-VS3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6m7-Hj-KuT">
+                                        <rect key="frame" x="160" y="160" width="80" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uoa-9m-xJo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a6S-BU-1Ax">
+                                        <rect key="frame" x="241" y="160" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647064924240112" green="0.5215686559677124" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ihc-VP-x5Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RLM-16-MyE">
+                                        <rect key="frame" x="0.0" y="240" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uxj-KH-GBA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ys-Rh-ub1">
+                                        <rect key="frame" x="80" y="240" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MSi-wS-htc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Btk-sY-ntn">
+                                        <rect key="frame" x="160" y="240" width="80" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZFS-tt-1Hi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="umQ-VJ-YLn">
+                                        <rect key="frame" x="241" y="240" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647064924240112" green="0.5215686559677124" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Csq-y3-OaP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oig-9T-SOw">
+                                        <rect key="frame" x="0.0" y="320" width="159" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AHe-yk-8fq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MZv-f7-TA3">
+                                        <rect key="frame" x="160" y="320" width="80" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82352948188781738" green="0.83921575546264648" blue="0.83529418706893921" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P2P-iJ-GKd">
+                                        <rect key="frame" x="241" y="320" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647064924240112" green="0.5215686559677124" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnShowResultTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dkM-Wv-Djt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="0" textAlignment="right" minimumFontSize="17" id="jvx-3N-Oqh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" id="F9A-2r-a1X" userLabel="View Landscape">
+                                <rect key="frame" x="-124" y="329" width="568" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JLp-pX-Klg">
+                                        <rect key="frame" x="341" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PoR-ix-oka">
+                                        <rect key="frame" x="398" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="+/-">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cEN-69-WB7">
+                                        <rect key="frame" x="455" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17p-EM-opP">
+                                        <rect key="frame" x="512" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title=":">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zy1-KN-jvf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oy5-aC-j37">
+                                        <rect key="frame" x="341" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XZV-xn-kBP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eC-4a-23s">
+                                        <rect key="frame" x="398" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YY3-C8-nxm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B7v-i3-x3o">
+                                        <rect key="frame" x="455" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="324-EC-l6x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gtg-EY-IT5">
+                                        <rect key="frame" x="512" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="✕">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YES-7z-Hls"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bS8-gp-77o">
+                                        <rect key="frame" x="341" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3lU-2h-Nty">
+                                        <rect key="frame" x="398" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RqM-5l-u74">
+                                        <rect key="frame" x="455" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L30-3U-zAS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u8I-a1-kTg">
+                                        <rect key="frame" x="512" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rSn-1u-Xdl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tP2-cT-c62">
+                                        <rect key="frame" x="341" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DCa-Di-pLm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uUR-pm-B9l">
+                                        <rect key="frame" x="398" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Go-SD-HtN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dnL-IP-DDA">
+                                        <rect key="frame" x="455" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNumberTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lC9-Im-5dc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bGB-PB-JoB">
+                                        <rect key="frame" x="512" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BM5-Eu-W8S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U2T-nJ-ZBM">
+                                        <rect key="frame" x="341" y="192" width="113" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lvj-hw-FVC">
+                                        <rect key="frame" x="455" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vfe-VC-QoK">
+                                        <rect key="frame" x="512" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889225006104" green="0.85098046064376831" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sv0-0r-hCN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kWp-LY-obS">
+                                        <rect key="frame" x="227" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="m-">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yJv-CO-TC6">
+                                        <rect key="frame" x="284" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="mr">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3gq-uK-66J">
+                                        <rect key="frame" x="227" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="ex">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7mO-tk-Ehb">
+                                        <rect key="frame" x="284" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="10x">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xok-dZ-m2y">
+                                        <rect key="frame" x="227" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="ln">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OLI-YE-U6s">
+                                        <rect key="frame" x="284" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="log10">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KjL-cz-loo">
+                                        <rect key="frame" x="227" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="e">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gaV-l2-uMr">
+                                        <rect key="frame" x="284" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="EE">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oAS-FP-s5p">
+                                        <rect key="frame" x="227" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="pi">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="isd-oH-Otz">
+                                        <rect key="frame" x="284" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="Rand">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DrV-w1-00K">
+                                        <rect key="frame" x="113" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="mc">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cdB-JY-n07">
+                                        <rect key="frame" x="170" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="m+">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fqe-s3-VpK">
+                                        <rect key="frame" x="113" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="x3">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Aa4-CC-xW7">
+                                        <rect key="frame" x="170" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="xy">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r3H-T1-eCg">
+                                        <rect key="frame" x="113" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="∛">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y48-Tq-r2B">
+                                        <rect key="frame" x="170" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="xvy">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xAM-3M-Z2d">
+                                        <rect key="frame" x="113" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="cos">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zWH-IZ-Kmq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bvB-rc-aGs">
+                                        <rect key="frame" x="170" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="tan">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BKg-61-BG1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M1r-Iv-Quh">
+                                        <rect key="frame" x="113" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="cosh">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wZd-Je-FPa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hoe-R8-mjf">
+                                        <rect key="frame" x="170" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="tanh">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MZr-pM-SAl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hkl-qT-GoO">
+                                        <rect key="frame" x="0.0" y="-1" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="(">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ksT-nw-qK1">
+                                        <rect key="frame" x="57" y="-1" width="55" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4bS-Jw-cvf">
+                                        <rect key="frame" x="0.0" y="48" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="2nd">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2ndModeTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wTA-0j-hH0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MTj-Ra-3fu">
+                                        <rect key="frame" x="57" y="48" width="55" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="x2">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MOb-iW-3vR">
+                                        <rect key="frame" x="0.0" y="96" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="1/x">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJX-hP-hf8">
+                                        <rect key="frame" x="57" y="96" width="55" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="√">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oTG-6J-sy8">
+                                        <rect key="frame" x="0.0" y="144" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="x!">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0IJ-yH-hdS">
+                                        <rect key="frame" x="57" y="144" width="55" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="sin">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lss-fw-WUU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KR4-G2-9yL">
+                                        <rect key="frame" x="0.0" y="192" width="56" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="Rad">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSwitchRadDegreeTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lod-6v-0ca"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ex6-KO-I6x">
+                                        <rect key="frame" x="57" y="192" width="55" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84705889229999998" green="0.85098046059999999" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="sinh">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOperationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dcb-dm-VNs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btn2ndModeTouchUpInside" destination="4bS-Jw-cvf" id="fTV-Hd-gwZ"/>
+                        <outlet property="btnCos" destination="xAM-3M-Z2d" id="Mbb-hm-1vx"/>
+                        <outlet property="btnCosh" destination="M1r-Iv-Quh" id="jw5-He-gZa"/>
+                        <outlet property="btnSin" destination="0IJ-yH-hdS" id="QwN-6V-RjG"/>
+                        <outlet property="btnSinh" destination="Ex6-KO-I6x" id="6Tf-Nf-KsE"/>
+                        <outlet property="btnSwitchRadDegree" destination="KR4-G2-9yL" id="CXg-Gi-piK"/>
+                        <outlet property="btnTan" destination="bvB-rc-aGs" id="7OY-lF-sVc"/>
+                        <outlet property="btnTanh" destination="Hoe-R8-mjf" id="WHb-HW-xvP"/>
+                        <outlet property="txtDisplay" destination="jvx-3N-Oqh" id="2fJ-Pj-ugH"/>
+                        <outlet property="viewCalLandscape" destination="F9A-2r-a1X" id="Syd-6y-pg5"/>
+                        <outlet property="viewCalPortrait" destination="CRb-7v-4FN" id="71W-Tg-Tbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
